@@ -23,4 +23,10 @@ public class SampleTestCase {
         User[] followers = userController.getFollowersByUsername("maxkatrenko");
         Assert.assertEquals(1, followers.length);
     }
+
+    @Test
+    public void testFollowing() {
+        User[] following = userController.getFollowingByUsername("maxkatrenko");
+        Assert.assertEquals(2,following.length);
+    }
 }
