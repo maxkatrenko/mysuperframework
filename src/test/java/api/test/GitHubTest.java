@@ -1,10 +1,12 @@
-import controllers.UserController;
-import models.User;
+package api.test;
+
+import api.controllers.UserController;
+import api.models.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SampleTestCase {
+public class GitHubTest {
     private UserController userController;
 
     @Before

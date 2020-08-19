@@ -1,4 +1,4 @@
-package models;
+package api.models;
 
 public class User {
     private String login;

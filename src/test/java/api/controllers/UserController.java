@@ -1,6 +1,6 @@
-package controllers;
+package api.controllers;
 
-import models.User;
+import api.models.User;
 import org.springframework.web.client.RestTemplate;
 
 public class UserController {
