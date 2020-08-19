@@ -26,7 +26,7 @@ jobs:
         run: |
           echo "Hello Message1"
           echo "Hello Message2"
-          echo "Aplication name: ${{ env.APPLICATION_NAME }}
+          echo "Aplication name: ${{ env.APPLICATION_NAME }}"
       
       
   my_deploy:
@@ -38,6 +38,6 @@ jobs:
        run: echo "Hello World from Deploy Job"
      
      - name: Printing Deployment package
-       run: echo "Deploy Package name is ${{ env.DEPLOY_PACKAGE_NAME }}
+       run: echo "Deploy Package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
   
     
