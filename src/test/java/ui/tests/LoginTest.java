@@ -2,6 +2,7 @@ package ui.tests;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import ui.pages.LoginPage;
 import util.AbstractWebDriver;
@@ -15,9 +16,10 @@ public class LoginTest extends AbstractWebDriver {
     }
 
     @Test
+    @Ignore
     public void testLogin() {
-        loginPage.fillLogin("bestintheworldqq@gmail.com");
-        loginPage.fillPassword("Csnorarcemax1");
+        loginPage.fillLogin("");
+        loginPage.fillPassword("");
         loginPage.clickSignInBtn();
 
         Assert.assertTrue(loginPage.webDriver.getTitle().contains("GitHub"));
