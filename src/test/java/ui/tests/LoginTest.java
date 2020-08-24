@@ -1,22 +1,21 @@
 package ui.tests;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.apache.commons.codec.binary.Base64;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import ui.pages.LoginPage;
-import util.AbstractWebDriver;
+import ui.util.AbstractWebDriver;
 
 public class LoginTest extends AbstractWebDriver {
     private LoginPage loginPage;
 
-    @Before
+    @BeforeTest
     public void init() {
         loginPage = new LoginPage(webDriver, "https://github.com/login");
     }
 
     @Test
-    @Ignore
     public void testLogin() {
         loginPage.fillLogin("");
         loginPage.fillPassword("");
